@@ -1,8 +1,10 @@
+#include "MyNodeDefinition.h"
+#include <MySensors.h>
 #include "Dimmer.h"
 #include "Relay.h"
-#include "MyNodeDefinition.h"
+
 #include <SPI.h>
-#include <MySensors.h>
+
 
 Dimmer dimmer1;
 Dimmer dimmer2;

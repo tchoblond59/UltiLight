@@ -3,6 +3,7 @@
 // 
 
 #include "Relay.h"
+#include <core/MySensorsCore.h>
 
 void Relay::receive(const MyMessage& message)
 {

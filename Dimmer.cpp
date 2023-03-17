@@ -1,8 +1,5 @@
-// 
-// 
-// 
-
 #include "Dimmer.h"
+#include <core/MySensorsCore.h>
 
 //Dimmer Dimmer;
 

@@ -2,19 +2,13 @@
 #ifndef _DIMMER_h
 #define _DIMMER_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
-#else
-	#include "WProgram.h"
-#endif
-
 
 #define BASE_CH 0x80
 #define CHANNELS 4
 #define DIMMER_DELAY 3000
 #include "MyNodeDefinition.h"
 #include <Wire.h>
-#include <C:\Users\julie\Documents\Arduino\libraries\MySensors\core\MySensorsCore.h> //If someone can explain me why i have to do this shit...
+#include <core/MyMessage.h>
 
 class Dimmer
 {
@@ -47,4 +41,3 @@ private:
 //extern Dimmer Dimmer;
 
 #endif
-

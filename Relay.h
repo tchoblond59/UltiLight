@@ -3,16 +3,13 @@
 #ifndef _RELAY_h
 #define _RELAY_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
-#else
-	#include "WProgram.h"
-#endif
-
 #define RELAY_ON 1
 #define RELAY_OFF 0
-#include <C:\Users\julie\Documents\Arduino\libraries\MySensors\core\MySensorsCore.h> //If someone can explain me why i have to do this shit...
+//#include <C:\Users\julie\Documents\Arduino\libraries\MySensors\core\MySensorsCore.h> //If someone can explain me why i have to do this shit...
+#include <Arduino.h>
 #include "MyNodeDefinition.h"
+
+#include <core/MyMessage.h>
 class Relay
 {
  protected:
@@ -29,4 +26,3 @@ private:
 };
 
 #endif
-
